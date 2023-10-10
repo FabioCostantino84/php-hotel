@@ -54,6 +54,7 @@ $hotels = [
 
 ];
 
+
 ?>
 
 <!DOCTYPE html>
@@ -73,7 +74,18 @@ $hotels = [
 
     <div class="container my-5">
 
+        <h1>Filtra Hotel per Parcheggio</h1>
+        <form action="" method="get">
+            <label for="parcheggio">Seleziona opzione:</label>
+            <select id="parking" name="parking">
+                <option value="tutti">Tutti</option>
+                <option value="con_parcheggio">Con Parcheggio</option>
+                <option value="senza_parcheggio">Senza Parcheggio</option>
+            </select>
+            <input type="submit" value="Filtra">
+        </form>
         <div class="row my-3">
+
 
             <table class="table table-primary">
                 <thead>
@@ -93,7 +105,7 @@ $hotels = [
 
                             <td><?php echo $hotel['name']; ?></td>
                             <td><?php echo $hotel['description']; ?></td>
-                            <td><?php echo $hotel ['parking']; ?></td>
+                            <td><?php echo $hotel['parking'] ? 'Disponibile' : 'Non disponibile';  ?></td>
                             <td><?php echo $hotel['vote']; ?></td>
                             <td><?php echo 'Km ' . $hotel['distance_to_center']; ?></td>
 
@@ -104,6 +116,8 @@ $hotels = [
             </table>
 
         </div>
+
+        
 
 
     </div>
