@@ -70,13 +70,51 @@ $hotels = [
 
 <body>
 
-    <ul>
+
+    <div class="container my-5">
+
+        <div class="row my-3">
+
+            <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Parking</th>
+                        <th scope="col">Vote</th>
+                        <th scope="col">distance to center</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td scope="row">Item</td>
+                        <td>Item</td>
+                        <td>Item</td>
+                        <td>Item</td>
+                        <td>Item</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+    <!-- <ul>
 
         <?php foreach ($hotels as $hotel) : ?>
             <li><?php echo $hotel['name'] . ' - ' . $hotel['description'] . ' - ' . $hotel['parking'] . ' - ' . $hotel['vote'] . ' - ' . $hotel['distance_to_center'] ?></li>
         <?php endforeach; ?>
 
-    </ul>
+    </ul> -->
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
 
 </body>
 
